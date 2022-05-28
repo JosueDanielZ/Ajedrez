@@ -1,7 +1,7 @@
 import pygame as py
 
 py.init()
-
+#comit prueba 
 WHITE=[255,255,255]
 ancho = 480
 altura = 480
@@ -33,7 +33,5 @@ while bandera:
     ventana.blit(tablero,[0,0])
     ventana.blit(peon,[120,60])
 
-
-
-    py.display.flip()
+    py.display.flip(
 py.quit()
