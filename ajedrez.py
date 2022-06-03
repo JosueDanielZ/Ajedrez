@@ -8,6 +8,7 @@ import sys
 pygame.init()
 
 #Color blanco en RGB
+
 WHITE=[255,255,255]
 
 #Medidas de la ventan del juego
@@ -135,6 +136,7 @@ while bandera:
     #mostrando las imagenes en pantalla
     ventana.blit(tablero,[0,0])
     ventana.blit(peon,[120,60])
+
 
     piezas.update()
     piezas.draw(ventana)
