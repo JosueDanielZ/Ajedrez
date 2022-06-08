@@ -19,9 +19,12 @@ class Tablero():
         P_2, P_6, T_2, A_2
         P_3, P_7, C_1, Q_1
         p_4, P_8, C_2, K_1""")
-
+        #------------------------------------------------#
+        
         self.pieza = input("Escriba la pieza que quiera: ")
         print("Ha seleccionado ",self.pieza)
+
+        #------------------------------------------------#
         self.validar = input("Si quiere continuar presione S y si no presione N: ")
         if self.validar == "N":
             tablero1.pedirpieza()
@@ -46,4 +49,4 @@ tablero1 = Tablero()
 tablero1.mostrartablero()
 tablero1.pedirpieza()
 retorno = tablero1.verificarpieza()
-tablero1.pos()
+#tablero1.pos()
