@@ -19,12 +19,13 @@ class Tablero():
         P_2, P_6, T_2, A_2
         P_3, P_7, C_1, Q_1
         p_4, P_8, C_2, K_1""")
-        #------------------------------------------------#
         
-        self.pieza = input("Escriba la pieza que quiera: ")
-        print("Ha seleccionado ",self.pieza)
-
-        #------------------------------------------------#
+        self.piezax = input("Seleccine la casilla del eje x: ")
+        print("Ha seleccionado ",self.piezax)
+        
+        self.piezay = input("Seleccine la casilla del eje y: ")
+        print("Ha seleccionado ",self.piezay) 
+        
         self.validar = input("Si quiere continuar presione S y si no presione N: ")
         if self.validar == "N":
             tablero1.pedirpieza()
