@@ -20,23 +20,30 @@ class Tablero():
         P_3, P_7, C_1, Q_1
         p_4, P_8, C_2, K_1""")
         
-        self.piezax = input("Seleccine la casilla del eje x: ")
-        print("Ha seleccionado ",self.piezax)
+        self.piezax = input("Seleccine la fila: ")
+        print("Ha seleccionado la fila: ",self.piezax)
         
-        self.piezay = input("Seleccine la casilla del eje y: ")
-        print("Ha seleccionado ",self.piezay) 
+        self.piezay = input("Seleccine la columna: ")
+        print("Ha seleccionado la columna: ",self.piezay) 
+
+        #--------------------------------------------#
+
+        """hacer una funcion que muestre en pantalla el elemento de nuestra lista self.tablero en las coordenadas self.piezax como la coordenada
+        de la fila y self.piezay como la coordenada de la columna"""
+
+        #--------------------------------------------#
         
         self.validar = input("Si quiere continuar presione S y si no presione N: ")
         if self.validar == "N":
             tablero1.pedirpieza()
 
-    def verificarpieza(self):
+    """def verificarpieza(self):
         for fila in self.tablero:
             for elemento in fila:
                 if elemento == self.pieza:
                     print(elemento)
                     print("Existe la pieza")
-                    return True
+                    return True"""
         
     """def pos(self):
         for i in range(0,8):
@@ -49,5 +56,5 @@ tablero1 = Tablero()
 
 tablero1.mostrartablero()
 tablero1.pedirpieza()
-retorno = tablero1.verificarpieza()
+#retorno = tablero1.verificarpieza()
 #tablero1.pos()
