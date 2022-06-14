@@ -26,26 +26,27 @@ class Tablero():
         self.piezay = input("Seleccine la columna: ")
         print("Ha seleccionado la columna: ",self.piezay) 
 
-        #--------------------------------------------#
-
         #Imprimir La Pieza seleccionada por el usuario
         #si existe la pieza 
-        Cdadepieza =(self.tablero[int(self.piezax)][int(self.piezay)])
-        if Cdadepieza == "   ":
+        cdadepieza =(self.tablero[int(self.piezax)][int(self.piezay)])
+        if cdadepieza == "   ":
             print ("Pieza no Existente")
+            self.pedirpieza()
 
-        else:
-            print (Cdadepieza) 
+        elif cdadepieza != "   ":
+            print (cdadepieza) 
         
 
-        """hacer una funcion que muestre en pantalla el elemento de nuestra lista self.tablero en las coordenadas self.piezax como la coordenada
-        de la fila y self.piezay como la coordenada de la columna"""
-
-        #--------------------------------------------#
-        
-        self.validar = input("Si quiere continuar presione S y si no presione N: ")
+        self.validar = input("Si quiere continuar presione S y si no presione N (solo MAYUSCULAS): ")
         if self.validar == "N":
             tablero1.pedirpieza()
+
+    #-----------------------------------------#
+
+    """Hacer una funcion DEF con el nombre moverpieza en el cual contenga una funcion que
+    le diga al usuario cuales seran las coordenadas X y coordenadas Y donde quiere mover la pieza """
+
+    #-----------------------------------------#
 
     """def verificarpieza(self):
         for fila in self.tablero:
