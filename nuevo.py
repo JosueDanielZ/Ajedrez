@@ -28,6 +28,16 @@ class Tablero():
 
         #--------------------------------------------#
 
+        #Imprimir La Pieza seleccionada por el usuario
+        #si existe la pieza 
+        Cdadepieza =(self.tablero[int(self.piezax)][int(self.piezay)])
+        if Cdadepieza == "   ":
+            print ("Pieza no Existente")
+
+        else:
+            print (Cdadepieza) 
+        
+
         """hacer una funcion que muestre en pantalla el elemento de nuestra lista self.tablero en las coordenadas self.piezax como la coordenada
         de la fila y self.piezay como la coordenada de la columna"""
 
