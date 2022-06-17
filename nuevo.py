@@ -69,9 +69,12 @@ class Tablero():
          for i in self.tablero:
             print(i)
     #---------------------------------------------------------#
-    """Hacer una funcion DEF con el nombre random para generar 2 numeros aleatorios en el
-    rango de 0 a 7 y guardarlos en distintas variables"""
+    def random(self):
 
+        self.xrandom= random.randrange(0,8)
+        self.yrandom= random.randrange(0,8)
+        self.movimientox= random.randrange(0,8)
+        self.movimientoy= random.randrange(0,8)
     #----------------------------------------------------------#
 
 tablero1 = Tablero()
