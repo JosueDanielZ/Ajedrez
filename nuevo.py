@@ -1,3 +1,4 @@
+import random
 class Tablero():
     def __init__(self):
         self.tablero = [["t_1" , "c_1" , "a_1" , "q_1" , "k_1" , "a_2" , "c_2" , "t_2"],
@@ -65,9 +66,12 @@ class Tablero():
 
             self.moverpieza()
         elif self.validar1 !="N":
-
+            
          for i in self.tablero:
             print(i)
+        print ("\n")
+        self.random()
+
     #Funcion para obtener 4 numeros aleatorios
     def random(self):
 
@@ -78,7 +82,18 @@ class Tablero():
         #-----------------------------------------------#
         """ Con los 2 primeros numeros random instanciar en el tablero para que la maquina selecciona la pieza y
         los otros para colocar la pieza"""
+
+        self.randommov =(self.tablero[int(self.xrandom)][int(self.yrandom)])
         
+        self.tablero [int(self.xrandom)] [int(self.yrandom)] = "   " 
+
+        self.tablero [self.movimientox] [self.movimientoy] = self.randommov
+
+        for i in self.tablero:
+            print(i)
+
+
+
         #-----------------------------------------------#
 
 tablero1 = Tablero()
