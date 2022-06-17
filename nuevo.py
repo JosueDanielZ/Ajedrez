@@ -20,6 +20,7 @@ class Tablero():
         P_3, P_7, C_1, Q_1
         p_4, P_8, C_2, K_1""")
         
+        #Pedir coordenadas para seleccionar la pieza
         self.piezax = input("Seleccine la fila: ")
         print("Ha seleccionado la fila: ",self.piezax)
         
@@ -37,28 +38,21 @@ class Tablero():
             print (self.cdadepieza) 
             self.moverpieza()
         
-
+        #Funcion para saber si el usuario quiere continuar o no
         self.validar = input("Si quiere continuar presione S y si no presione N (solo MAYUSCULAS): ")
         if self.validar == "N":
             tablero1.pedirpieza()
 
 
     def moverpieza(self):
+        #Pedir coordenadas para colocar la pieza
         self.piezacorx=int(input("seleccione una fila para mover su pieza "))
         print("la fila seleccionada es:",self.piezacorx)
 
         self.piezacory=int(input("seleccione una columna para mover su pieza "))
         print("la columna seleccionada es:",self.piezacory)
 
-        #--------------------------------------------------------#
-
-        """Hacer una funcion que utilice las variables dpnde se pidio coordenadas para
-        seleccionar la pieza y que instancie en el tablero para colocar la pieza segun 
-        dichas coordenadas"""
-
-
-        """Luego hacer lo mismo pero con las coordenadas que escribio el usario para MOVER
-        la pieza"""
+        #Funcion para mover la pieza
 
         self.tablero [int(self.piezax)] [int(self.piezay)] = "   " 
 
@@ -66,6 +60,7 @@ class Tablero():
 
         self.validar1 = input("Si quiere continuar presione S y si no presione N (solo MAYUSCULAS): ")
 
+        #Funcion para saber si el usuario quiere continuar o no
         if self.validar1 == "N":
 
             self.moverpieza()
@@ -73,8 +68,11 @@ class Tablero():
 
          for i in self.tablero:
             print(i)
+    #---------------------------------------------------------#
+    """Hacer una funcion DEF con el nombre random para generar 2 numeros aleatorios en el
+    rango de 0 a 7 y guardarlos en distintas variables"""
 
-        #--------------------------------------------------------#
+    #----------------------------------------------------------#
 
 tablero1 = Tablero()
 
