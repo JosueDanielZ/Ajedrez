@@ -68,14 +68,18 @@ class Tablero():
 
          for i in self.tablero:
             print(i)
-    #---------------------------------------------------------#
+    #Funcion para obtener 4 numeros aleatorios
     def random(self):
 
         self.xrandom= random.randrange(0,8)
         self.yrandom= random.randrange(0,8)
         self.movimientox= random.randrange(0,8)
         self.movimientoy= random.randrange(0,8)
-    #----------------------------------------------------------#
+        #-----------------------------------------------#
+        """ Con los 2 primeros numeros random instanciar en el tablero para que la maquina selecciona la pieza y
+        los otros para colocar la pieza"""
+        
+        #-----------------------------------------------#
 
 tablero1 = Tablero()
 
