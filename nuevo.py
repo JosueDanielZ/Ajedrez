@@ -28,13 +28,13 @@ class Tablero():
 
         #Imprimir La Pieza seleccionada por el usuario
         #si existe la pieza 
-        cdadepieza =(self.tablero[int(self.piezax)][int(self.piezay)])
-        if cdadepieza == "   ":
+        self.cdadepieza =(self.tablero[int(self.piezax)][int(self.piezay)])
+        if self.cdadepieza == "   ":
             print ("Pieza no Existente")
             self.pedirpieza()
 
-        elif cdadepieza != "   ":
-            print (cdadepieza) 
+        elif self.cdadepieza != "   ":
+            print (self.cdadepieza) 
             self.moverpieza()
         
 
@@ -44,10 +44,10 @@ class Tablero():
 
 
     def moverpieza(self):
-        self.piezacorx=int(input("seleccione una fila para mover su pieza"))
+        self.piezacorx=int(input("seleccione una fila para mover su pieza "))
         print("la fila seleccionada es:",self.piezacorx)
 
-        self.piezacory=int(input("seleccione una columna para mover su pieza"))
+        self.piezacory=int(input("seleccione una columna para mover su pieza "))
         print("la columna seleccionada es:",self.piezacory)
 
         #--------------------------------------------------------#
@@ -56,8 +56,23 @@ class Tablero():
         seleccionar la pieza y que instancie en el tablero para colocar la pieza segun 
         dichas coordenadas"""
 
+
         """Luego hacer lo mismo pero con las coordenadas que escribio el usario para MOVER
         la pieza"""
+
+        self.tablero [int(self.piezax)] [int(self.piezay)] = "   " 
+
+        self.tablero [self.piezacorx] [self.piezacory] = self.cdadepieza
+
+        self.validar1 = input("Si quiere continuar presione S y si no presione N (solo MAYUSCULAS): ")
+
+        if self.validar1 == "N":
+
+            self.moverpieza()
+        elif self.validar1 !="N":
+
+         for i in self.tablero:
+            print(i)
 
         #--------------------------------------------------------#
 
