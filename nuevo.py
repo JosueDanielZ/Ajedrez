@@ -45,6 +45,13 @@ class Tablero():
 
     """Hacer una funcion DEF con el nombre moverpieza en el cual contenga una funcion que
     le diga al usuario cuales seran las coordenadas X y coordenadas Y donde quiere mover la pieza """
+    def moverpieza(self):
+        self.piezacorx=input("seleccione una fila para mover su pieza")
+        print("la fila seleccionada es:",self.piezacorx)
+
+        self.piezacory=input("seleccione una columna para mover su pieza")
+        print("la columna seleccionada es:",self.piezacory)
+
 
     #-----------------------------------------#
 
