@@ -35,44 +35,33 @@ class Tablero():
 
         elif cdadepieza != "   ":
             print (cdadepieza) 
+            self.moverpieza()
         
 
         self.validar = input("Si quiere continuar presione S y si no presione N (solo MAYUSCULAS): ")
         if self.validar == "N":
             tablero1.pedirpieza()
 
-    #-----------------------------------------#
 
-    """Hacer una funcion DEF con el nombre moverpieza en el cual contenga una funcion que
-    le diga al usuario cuales seran las coordenadas X y coordenadas Y donde quiere mover la pieza """
     def moverpieza(self):
-        self.piezacorx=input("seleccione una fila para mover su pieza")
+        self.piezacorx=int(input("seleccione una fila para mover su pieza"))
         print("la fila seleccionada es:",self.piezacorx)
 
-        self.piezacory=input("seleccione una columna para mover su pieza")
+        self.piezacory=int(input("seleccione una columna para mover su pieza"))
         print("la columna seleccionada es:",self.piezacory)
 
+        #--------------------------------------------------------#
 
-    #-----------------------------------------#
+        """Hacer una funcion que utilice las variables dpnde se pidio coordenadas para
+        seleccionar la pieza y que instancie en el tablero para colocar la pieza segun 
+        dichas coordenadas"""
 
-    """def verificarpieza(self):
-        for fila in self.tablero:
-            for elemento in fila:
-                if elemento == self.pieza:
-                    print(elemento)
-                    print("Existe la pieza")
-                    return True"""
-        
-    """def pos(self):
-        for i in range(0,8):
-            self.indice = self.tablero[i].index(self.pieza)
-            print(self.indice)"""
-        
-        
+        """Luego hacer lo mismo pero con las coordenadas que escribio el usario para MOVER
+        la pieza"""
+
+        #--------------------------------------------------------#
 
 tablero1 = Tablero()
 
 tablero1.mostrartablero()
 tablero1.pedirpieza()
-#retorno = tablero1.verificarpieza()
-#tablero1.pos()
