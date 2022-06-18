@@ -22,12 +22,10 @@ class Tablero():
         p_4, P_8, C_2, K_1""")
         
         #Pedir coordenadas para seleccionar la pieza
-        """Hacer una funcion que si el usuario literalmente escriba la palabra exit, salga del programa
-        (la palabra salir se tendra que guardar en la variable self.piezax) y con una condicional la variable var1 cambie a False"""
         self.piezax = input("(Si desea salir escriba exit) Seleccine la fila: ")
         print("Ha seleccionado la fila: ",self.piezax)
 
-        #-------------------------------------------#
+        
         if self.piezax == "exit":
             var1=False
             print("Gracis por jugar")
@@ -86,9 +84,13 @@ class Tablero():
         self.yrandom= random.randrange(0,8)
         self.movimientox= random.randrange(0,8)
         self.movimientoy= random.randrange(0,8)
+
+        print("Coordenadas que selecciono la maquina: ",self.movimientox,self.movimientoy)
         #Funcion para que la maquina mueva la pieza
         self.randommov =(self.tablero[int(self.xrandom)][int(self.yrandom)])
         
+        print("Pieza que selecciono la maquina: ", self.randommov)
+
         self.tablero [int(self.xrandom)] [int(self.yrandom)] = "   " 
 
         self.tablero [self.movimientox] [self.movimientoy] = self.randommov
