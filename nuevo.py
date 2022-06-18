@@ -79,10 +79,7 @@ class Tablero():
         self.yrandom= random.randrange(0,8)
         self.movimientox= random.randrange(0,8)
         self.movimientoy= random.randrange(0,8)
-        #-----------------------------------------------#
-        """ Con los 2 primeros numeros random instanciar en el tablero para que la maquina selecciona la pieza y
-        los otros para colocar la pieza"""
-
+        #Funcion para que la maquina mueva la pieza
         self.randommov =(self.tablero[int(self.xrandom)][int(self.yrandom)])
         
         self.tablero [int(self.xrandom)] [int(self.yrandom)] = "   " 
@@ -94,9 +91,13 @@ class Tablero():
 
 
 
-        #-----------------------------------------------#
 
 tablero1 = Tablero()
 
 tablero1.mostrartablero()
+
+#------------------------------------------#
+""" Implementar un While para que se ejecute constantemente"""
+
 tablero1.pedirpieza()
+#------------------------------------------#
