@@ -96,8 +96,9 @@ tablero1 = Tablero()
 
 tablero1.mostrartablero()
 
-#------------------------------------------#
-""" Implementar un While para que se ejecute constantemente"""
+var1=True
 
-tablero1.pedirpieza()
-#------------------------------------------#
+while var1:
+
+ tablero1.pedirpieza()
+
