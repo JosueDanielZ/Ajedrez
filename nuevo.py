@@ -28,7 +28,11 @@ class Tablero():
         print("Ha seleccionado la fila: ",self.piezax)
 
         #-------------------------------------------#
-        self.piezay = input("Seleccine la columna: ")
+        if self.piezax == "exit":
+            var1=False
+            print("Gracis por jugar")
+
+        self.piezay = input("Seleccione la columna: ")
         print("Ha seleccionado la columna: ",self.piezay) 
 
         #Imprimir La Pieza seleccionada por el usuario
