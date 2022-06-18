@@ -22,9 +22,12 @@ class Tablero():
         p_4, P_8, C_2, K_1""")
         
         #Pedir coordenadas para seleccionar la pieza
-        self.piezax = input("Seleccine la fila: ")
+        """Hacer una funcion que si el usuario literalmente escriba la palabra exit, salga del programa
+        (la palabra salir se tendra que guardar en la variable self.piezax) y con una condicional la variable var1 cambie a False"""
+        self.piezax = input("(Si desea salir escriba exit) Seleccine la fila: ")
         print("Ha seleccionado la fila: ",self.piezax)
-        
+
+        #-------------------------------------------#
         self.piezay = input("Seleccine la columna: ")
         print("Ha seleccionado la columna: ",self.piezay) 
 
